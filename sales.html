@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sales Entry</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <script>
+    function calculateTotal() {
+      const price = parseFloat(document.getElementById('price').value) || 0;
+      const qty = parseInt(document.getElementById('qty').value) || 0;
+      const fee = document.getElementById('transport').checked ? 0.05 * price * qty : 0;
+      const total = price * qty + fee;
+      document.getElementById('total').textContent = 'Total Cost: UGX ' + total.toFixed(2);
+    }
+  </script>
+</head>
+<header class="header">
+    <img src="images/logo.jpg" alt="Your Logo" class="logo">
+</header>
+<nav class="navbar">
+ <ul>
+    <li><a href="index.html">Home</a></li> 
+    <li><a href="products.html">Products</a></li> 
+   <li><a href="suppliers.html">Suppliers</a></li> 
+    <li><a href="users.html">Users</a></li>
+     <li><a href="Dashboard.html">Dashboard</a></li>
+      <li><a href="productlist.html">productlist</a></li>
+ </ul>
+    
+  </nav>
+
+<body>
+  <h2>Record a Sale</h2>
+  <form oninput="calculateTotal()">
+    <label>Customer Name:</label><input type="text"><br>
+    <label>Product Name:</label><input type="text"><br>
+    <label>Price (UGX):</label><input type="number" id="price"><br>
+    <label>Quantity:</label><input type="number" id="qty"><br>
+     <label>Quality:</label><input type="number" id="Qly"><br>
+      <label>Date:</label><input type="date" id="Date"><br>
+    <label>Apply 5% Transport Fee:</label><input type="checkbox" id="transport"><br>
+    <p id="total">Total Cost: UGX 0.00</p>
+    <button type="submit">Submit Sale</button>
+  </form>
+</body>
+<style>
+    body {
+  background-color: #f5f9ff;
+  font-family: 'Segoe UI', sans-serif;
+  padding: 30px;
+}
+ body{
+         background-image: url(images/background.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 110vh;
+        margin: 0;
+    
+    }
+form {
+  border-left: 5px solid #124f8c;
+  /* background: #fff; */
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  max-width: 500px;
+}
+
+input[type="number"], input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+p#total {
+  font-weight: bold;
+  margin-top: 10px;
+}
+nav {
+  background-color:  teal;
+  padding: 20px 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.navbar {
+  background-color: #146356;
+  padding: 20px 30px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 40px;
+}
+
+.navbar li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.navbar li a:hover {
+  color: #fbd46d;
+}
+.logo {
+            height: 60px;
+          
+        }
+
+        .logo {
+            position: absolute;
+            
+          left: 0px;
+        }
+</style>
+</html>

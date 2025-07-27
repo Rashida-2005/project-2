@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Supplier Records</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<header class="header">
+    <img src="images/logo.jpg" alt="Your Logo" class="logo">
+</header>
+<nav class="navbar">
+ <ul>
+    <li><a href="index.html">Home</a></li> 
+    <li><a href="products.html">Products</a></li>
+   <li><a href="sales.html">Sales</a></li> 
+    <li><a href="users.html">Users</a></li>
+     <li><a href="Dashboard.html">Dashboard</a></li>
+      <li><a href="productlist.html">productlist</a></li>
+ </ul>
+    
+  </nav>
+<body>
+  <h2>Manage Suppliers</h2>
+  <form>
+    <label>Supplier Name:</label><input type="text"><br><br>
+    <label>Contact Infomation:</label><input type="text"><br><br>
+    <label>Products Supplied:</label><input type="text"><br><br>
+    <label>Email Address:</label><input type="text"><br><br>
+    <label>Location:</label><input type="text"><br><br>
+    <button type="submit">Save Supplier</button>
+  </form>
+</body>
+<style>
+    body {
+  background-color: #fffdf3;
+  font-family: 'Segoe UI', sans-serif;
+  padding: 30px;
+}
+ body{
+         background-image: url(images/background.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 120vh;
+        margin: 0;
+    
+    }
+form {
+  /* background: white; */
+  padding: 25px;
+  border-left: 5px solid #8f7b17;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  max-width: 500px;
+}
+nav {
+  background-color:  teal;
+  padding: 20px 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.navbar {
+  background-color: #146356;
+  padding: 20px 30px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 40px;
+}
+
+.navbar li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.navbar li a:hover {
+  color: #fbd46d;
+}
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.logo {
+            height: 60px;
+          
+        }
+
+        .logo {
+            position: absolute;
+          left: 0px;
+        }
+        form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+form select{
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+    padding-left: 0px;
+}
+</style>
+</html>

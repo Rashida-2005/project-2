@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product Management</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<header class="header">
+    <img src="images/logo.jpg" alt="Your Logo" class="logo">
+</header>
+<nav class="navbar">
+ <ul>
+    <li><a href="index.html">Home</a></li> 
+   <li><a href="sales.html">Sales</a></li> 
+   <li><a href="suppliers.html">Suppliers</a></li> 
+    <li><a href="users.html">Users</a></li>
+     <li><a href="Dashboard.html">Dashboard</a></li>
+      <li><a href="productlist.html">productlist</a></li>
+      
+ </ul>
+    
+  </nav>
+<body>
+  <h2>Add or Edit Product</h2>
+  <form>
+    <label>Product Name:</label><input type="text" style="padding-right: 0px;"><br>
+    <label>Type:</label>
+    <select>
+      <option>Raw Material</option>
+      <option>Finished Product</option>
+    </select><br>
+    <label>Category:</label>
+    <select>
+      <option>Poles</option>
+      <option>Hardwood</option>
+      <option>Cupboards</option>
+      <option>Drawers</option>
+      <option>Home Furniture</option>
+      <option>Office Furniture</option>
+    </select><br>
+    <label>Cost Price:</label><input type="number"style="padding-right: 0px;"><br>
+    <label>Selling Price:</label><input type="number"style="padding-right: 0px;"><br>
+    <label>Quantity:</label><input type="number"style="padding-right: 0px;"><br>
+    <label>Color:</label><input type="text"style="padding-right: 0px;"><br>
+    <label>Measurements (e.g. cm):</label><input type="text"style="padding-right: 0px;"><br>
+   
+    <button type="submit">Save Product</button><br></a>
+  </form>
+
+</body>
+<style>
+    body {
+  background: #fffaf5;
+  font-family: 'Segoe UI', sans-serif;
+  padding: 30px;
+
+         background-image: url(images/background.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 150vh;
+        margin: 0;
+    
+    
+}
+form {
+  /* background: #fff; */
+  padding: 25px;
+  border-left: 5px solid #c15613;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  max-width: 500px;
+}
+
+form label {
+  font-weight: bold;
+  
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+form select{
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+    padding-left: 0px;
+}
+nav {
+  background-color:  teal;
+  padding: 20px 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1)
+}
+.navbar {
+  background-color: #146356;
+  padding: 20px 30px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 40px;
+}
+
+.navbar li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+#button{
+    color: teal;
+}
+
+.navbar li a:hover {
+  color: #fbd46d;
+}
+.logo {
+            height: 60px;
+          
+        }
+
+        .logo {
+            position: absolute;
+         
+          left: 0px;
+        }
+</style>
+</html>
