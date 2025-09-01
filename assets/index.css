@@ -1,0 +1,68 @@
+body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #2F4F4F, #8FBC8F);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .lock-screen {
+      text-align: center;
+      padding: 20px;
+      backdrop-filter: blur(8px);
+      border-radius: 20px;
+      border: 2px solid rgba(255, 255, 255, 0.3);
+    }
+    .lock-screen h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+    .lock-screen input,select{
+      margin: 10px 0;
+      padding: 10px;
+      border: none;
+      border-radius: 10px;
+      width: 100%;
+      max-width: 100%;
+    }
+    .lock-screen button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      /* background-color: #FFD700; */
+      /* color: #2F4F4F; */
+      font-weight: bold;
+    }
+    .quote {
+      margin-top: 20px;
+      font-style: italic;
+    }
+
+ .checkbox-container {
+  color: whitesmoke;
+}
+body{
+         background-image: url(/images/background.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 98vh;
+        margin: 0;
+    
+    }
+     footer{
+        background-color: teal;
+        color: white;
+        /* padding: 20px; */
+        text-align: center;
+    }
+
+
+        /* .dropdown-toggle {
+  height: 39px;
+  background-color: white !important;
+  /* border: 1px solid #ced4da; */

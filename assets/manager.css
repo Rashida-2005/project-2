@@ -1,0 +1,91 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-image: url(/images/background.jpg);
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+  background-color: #3e2f1c;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-top: 10px;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  background-color: #816647;
+}
+
+/* Main Dashboard Layout */
+main {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+h2 {
+  color: #3e2f1c;
+  margin-bottom: 10px;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+button {
+  background-color: #3e2f1c;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  margin-right: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #816647;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #3e2f1c;
+  color: #fff;
+  margin-top: 40px;
+  border-radius: 0 0 8px 8px;
+}
